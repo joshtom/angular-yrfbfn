@@ -16,6 +16,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     
     RouterModule.forRoot([
