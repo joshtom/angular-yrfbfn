@@ -22,8 +22,12 @@ export class CartComponent implements OnInit {
      this.items = this.cartService.getItems();
 
     //  set the checkoutForm property with a form model containing name and address fields, using the FormBuilder#group() method.
+    this.checkoutForm = this.formBuilder.group({
+      name: '',
+      address: 
+    })
 
-    
+
   }
 
 }
