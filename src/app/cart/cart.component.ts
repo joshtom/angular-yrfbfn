@@ -24,10 +24,16 @@ export class CartComponent implements OnInit {
     //  set the checkoutForm property with a form model containing name and address fields, using the FormBuilder#group() method.
     this.checkoutForm = this.formBuilder.group({
       name: '',
-      address: 
+      address: ''
     })
+  }
+  
+  onSubmit(customerData) {
+    // Process the checkout data here
+    console.warn('Your order has been submitted', customerData);
 
-
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
   }
 
 }
