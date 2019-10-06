@@ -20,6 +20,10 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
      this.items = this.cartService.getItems();
+
+    //  set the checkoutForm property with a form model containing name and address fields, using the FormBuilder#group() method.
+
+    
   }
 
 }
